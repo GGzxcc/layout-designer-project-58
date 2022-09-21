@@ -1,5 +1,8 @@
 body {
   font-family: Neucha;
+  padding: 0px;
+  margin: 0px;
+  color: #2A2626;
 }
 
 a {
@@ -12,7 +15,7 @@ a {
   margin-left: auto;
 }
 
-.distortions {
+.title-orange {
   color: #FE8A02;
 }
 
@@ -26,12 +29,17 @@ a {
 .title {
   font-size: 72px;
   line-height: 86px;
+  display: inline-block;
 }
 
 .text {
   color: #2A2626;
   font-size: 16px;
   line-height: 24px;
+}
+
+.subtitle {
+  font-size: 52px;
 }
 
 .more {
@@ -44,6 +52,54 @@ a {
   grid-area: more;
   align-items: center;
   justify-content: center;
+}
+
+.header-part {
+  background: url(../imgs/bg.png);
+  background-repeat: norepeat;
+  background-position: center;
+}
+
+.what-is-part {
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-part {
+  background: #42413C;
+}
+
+.video {
+  top: 100px;
+}
+
+.video-text {
+  margin-bottom: -70px;
+}
+
+.list-part {
+  background: #42413C;
+}
+
+.shaper {
+  padding-left: 24px;
+}
+
+.list-part-item {
+  background: #F5F4F0;
+}
+
+.item-number {
+  font-size: 64px;
+  line-height: 70px;
+  color: #42413C;
+}
+
+.distorsions-list {
+  padding-top: 200px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .grid {
@@ -59,7 +115,7 @@ a {
 }
 
 .nowrap {
-  wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .main-grid {
